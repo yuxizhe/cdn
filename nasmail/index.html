@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="theme-color" content="#3fadc5">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name=format-detection content="telephone=no">
+  <title>钱包助手-余额变动提醒</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/style.min.css">
+  <!-- 先加载vue 因为其他的都依赖于它 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@2.7.0/dist/vue-router.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/index.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@4.1.0/dist/echarts.simple.min.js"></script> -->
+  <script src="nebpay.js"></script>
+  <!-- <script src="neblas.js"></script> -->
+  <script>
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+    // var nebulas = require("nebulas"),
+    // Account = nebulas.Account,
+    // neb = new nebulas.Neb();
+    // neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
+    var dappAddress = "n1peCGJAr1BVtQoPZiheA6PfcTHBauYzWkq";
+  </script>
+<link href="styles.32aebef1500bea4a147d.css" rel="stylesheet"><link href="app.3438baca4cccdcc7f258.css" rel="stylesheet"></head>
+
+<body>
+  <div id="app">
+    <!-- <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link> -->
+    <router-view></router-view>
+    <!-- <img class='codingNetIcon' src="https://dn-coding-net-production-static.qbox.me/static/3c014d76335271b74510d8857e2f7892.png" alt=""> -->
+    <div class="contact-me">
+      <a href="mailto:yuxizhe2008@gmail.com" class="">联系作者</a>
+    </div>
+  </div>
+
+<script type="text/javascript" src="styles.32aebef1500bea4a147d.js"></script><script type="text/javascript" src="app.3438baca4cccdcc7f258.js"></script></body>
+
+</html>
