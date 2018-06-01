@@ -28,8 +28,8 @@ button,
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 98%;
-  margin: 5vh auto;
+  max-width: 96%;
+  margin: 2vh auto;
   min-height: 90vh;
   overflow: auto;
   background: white;
@@ -74,6 +74,7 @@ button,
 @media (min-width: 400px) {
   .mobile-wrap {
     max-width: 380px;
+    margin: 5vh auto;
   }
   .button-submit {
     margin-bottom: 2rem;
