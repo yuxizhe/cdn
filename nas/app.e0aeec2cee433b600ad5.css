@@ -20,7 +20,7 @@ body {
 }
 @font-face {
   font-family: 'iconfont';
-  src: url('http://p8upvupz2.bkt.clouddn.com/iconfont%20%281%29.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/yuxizhe/cdn@2/lib/iconfont.woff') format('woff');
 }
 .outer {
   height: 100vh;
@@ -28,7 +28,7 @@ body {
 }
 .company_container {
   overflow: auto;
-  height: 70%;
+  height: 90%;
 }
 a {
   cursor: pointer;
@@ -104,6 +104,7 @@ button,
   margin: auto;
   width: 100px;
   height: 100px;
+  border-radius: 10px;
 }
 .img_upload_explain {
   display: inline;
@@ -146,15 +147,19 @@ button,
   margin-top: 1rem;
   padding: 0.5rem;
   border-top: 1px solid #f3f5f7;
+  border-bottom: 1px solid #f3f5f7;
 }
 .user_state .iconfont {
   font-size: inherit;
   color: #ff7260;
 }
 .company_card_container {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #f3f5f7;
   border-top: 1px solid #f3f5f7;
+}
+.company_card_container:first-of-type {
+  border-top: none;
 }
 .company_card_container:last-of-type {
   margin-bottom: 10rem;
@@ -166,6 +171,7 @@ button,
 .company_card img {
   height: 100px;
   width: 100px;
+  border-radius: 10px;
 }
 .company_card .left {
   text-align: center;
