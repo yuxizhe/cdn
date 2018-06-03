@@ -19,7 +19,7 @@
   <meta name="x5-page-mode" content="app">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/style.min.css">
   <!-- 先加载vue 因为其他的都依赖于它 -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-router@2.7.0/dist/vue-router.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/index.js"></script>
@@ -37,9 +37,9 @@
     var neb = new nebulas.Neb();
     var Account = nebulas.Account;
     neb.setRequest(new HttpRequest("https://mainnet.nebulas.io"));
-    var dappAddress = "n1vCs14GA1WjEANhZffpoddCvfxoMDZVfj4";
+    var dappAddress = "n1iBzAJvfV3RtcCLtL7KQy1gWMKxzHiZd3Z";
   </script>
-<link href="app.a2d543adabfc29c6e6ff.css" rel="stylesheet"></head>
+<link href="app.4391d1ab6ecba44cbfee.css" rel="stylesheet"></head>
 
 <body>
   <div id="app">
@@ -51,16 +51,16 @@
 
       <mt-tabbar v-model="selected">
         <mt-tab-item id='/'>
-          <i slot="icon" class="iconfont">&#xe70b;</i>
-          领NAS
+          <i slot="icon" class="iconfont">&#xe640;</i>
+          APP商店
         </mt-tab-item>
         <mt-tab-item id='setAd'>
           <i slot="icon" class="iconfont">&#xe634;</i>
           发布APP
         </mt-tab-item>
-        <mt-tab-item id='store'>
-          <i slot="icon" class="iconfont">&#xe640;</i>
-          APP商店
+        <mt-tab-item id='/home'>
+          <i slot="icon" class="iconfont">&#xe70b;</i>
+          领NAS
         </mt-tab-item>
         <mt-tab-item id='my'>
           <i slot="icon" class="iconfont">&#xe606;</i>
@@ -87,6 +87,6 @@
 
     gtag('config', 'UA-119584347-2');
   </script>
-<script type="text/javascript" src="app.a2d543adabfc29c6e6ff.js"></script></body>
+<script type="text/javascript" src="app.4391d1ab6ecba44cbfee.js"></script></body>
 
 </html>
