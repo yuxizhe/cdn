@@ -194,6 +194,7 @@ button,
   font-size: 0.9286rem;
   color: #666;
   overflow: hidden;
+  word-break: break-all;
 }
 .company_card_bottom {
   display: flex;
