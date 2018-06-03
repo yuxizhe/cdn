@@ -220,6 +220,7 @@ button,
   text-indent: 0;
   line-height: 20px;
   cursor: pointer;
+  margin: 0.5rem auto;
 }
 .file input {
   position: absolute;
