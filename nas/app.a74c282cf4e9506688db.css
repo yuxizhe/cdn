@@ -64,14 +64,14 @@ button,
 }
 .inputfild {
   flex: 1;
-  height: 70vh;
+  height: 90%;
   overflow: auto;
 }
 .button-submit {
   margin-bottom: 1rem;
 }
 .range-container {
-  padding-bottom: 40px;
+  padding-bottom: 1rem;
 }
 .range-container .mint-cell-value {
   flex: 2.2;
@@ -88,6 +88,10 @@ button,
 .contact-me {
   margin: auto;
   text-align: center;
+}
+.contact-me span {
+  position: absolute;
+  right: 1rem;
 }
 .contact-me a {
   text-decoration: none;
@@ -261,7 +265,7 @@ button,
     max-width: 500px;
     min-height: 700px;
     max-height: 90vh;
-    margin: 5vh auto;
+    margin: 5vh auto 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -279,6 +283,11 @@ button,
   }
   .contact-me {
     display: inherit;
+    margin-top: 1rem;
+  }
+  .company_container::-webkit-scrollbar,
+  .inputfild::-webkit-scrollbar {
+    display: none;
   }
 }
 
