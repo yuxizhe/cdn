@@ -181,6 +181,7 @@ button,
   text-align: center;
 }
 .company_card .right {
+  flex: 1;
   margin-left: 1rem;
 }
 .company_card .right .title {
