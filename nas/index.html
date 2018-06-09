@@ -10,7 +10,7 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta name=format-detection content="telephone=no">
-  <title>天天领NAS-DAPP分发平台</title>
+  <title>天天领NAS - CPC应用分发平台</title>
   <meta name="full-screen" content="yes">
   <meta name="browsermode" content="application">
   <!-- QQ浏览器强制全屏  -->
@@ -19,15 +19,14 @@
   <meta name="x5-page-mode" content="app">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/style.min.css">
   <!-- 先加载vue 因为其他的都依赖于它 -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-router@2.7.0/dist/vue-router.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/mint-ui@2.2.13/lib/index.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@4.1.0/dist/echarts.simple.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/gh/nebulasio/nebPay@60c65f8a7e26015bb31c56d56f3a638a33ea3c8e/dist/nebPay.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/gh/yuxizhe/cdn@1/lib/nebpay.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/yuxizhe/cdn@1/lib/neblas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-i18n@7.8.0/dist/vue-i18n.min.js"></script>
   <script>
     var NebPay = require("nebpay");
     var nebPay = new NebPay();
@@ -39,7 +38,7 @@
     neb.setRequest(new HttpRequest("https://mainnet.nebulas.io"));
     var dappAddress = "n1vCs14GA1WjEANhZffpoddCvfxoMDZVfj4";
   </script>
-<link href="app.1fa258bcfda933edf0cf.css" rel="stylesheet"></head>
+<link href="app.7aa6933d314a5f870fbf.css" rel="stylesheet"></head>
 
 <body>
   <div id="app">
@@ -52,27 +51,26 @@
       <mt-tabbar v-model="selected">
         <mt-tab-item id='/'>
           <i slot="icon" class="iconfont">&#xe70b;</i>
-          领NAS
+          {{$t("html.tab1")}}
         </mt-tab-item>
-        <mt-tab-item id='setAd'>
+        <mt-tab-item id='/setAd'>
           <i slot="icon" class="iconfont">&#xe634;</i>
-          发布APP
+          {{$t("html.tab2")}}
         </mt-tab-item>
-        <mt-tab-item id='store'>
+        <mt-tab-item id='/store'>
           <i slot="icon" class="iconfont">&#xe640;</i>
-          APP商店
+          {{$t("html.tab3")}}
         </mt-tab-item>
-        <mt-tab-item id='my'>
+        <mt-tab-item id='/my'>
           <i slot="icon" class="iconfont">&#xe606;</i>
-          使用帮助
+          {{$t("html.tab4")}}
         </mt-tab-item>
       </mt-tabbar>
     </div>
     <div class="contact-me">
-      <a href="https://naspay.tech/faucet.html" target="_blank"> 申请初始gas </a>
+      <!-- <a href="https://naspay.tech/faucet.html" target="_blank"> 申请初始gas </a> -->
       <span>Hosted by
         <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-        <a href="mailto:yuxizhe2008@gmail.com" class="">联系作者 </a>
       </span>
     </div>
   </div>
@@ -85,6 +83,6 @@
 
     gtag('config', 'UA-119584347-2');
   </script>
-<script type="text/javascript" src="app.1fa258bcfda933edf0cf.js"></script></body>
+<script type="text/javascript" src="app.7aa6933d314a5f870fbf.js"></script></body>
 
 </html>

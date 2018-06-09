@@ -2,6 +2,36 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 650px) {
+  *,
+  body {
+    font-size: 3.73333333333vw;
+  }
+}
+@media only screen and (width: 360px) {
+  *,
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (width: 412px) {
+  *,
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (width: 384px) {
+  *,
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  *,
+  body {
+    font-size: 16px;
+  }
+}
 body {
   font-family: 'pingfang sc', 'Hiragino Sans GB', 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1';
   -webkit-font-smoothing: antialiased;
@@ -35,10 +65,10 @@ a {
 }
 .iconfont {
   font-family: 'iconfont' !important;
-  font-size: 20px;
+  font-size: 1.4286rem;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-width: 0.0143rem;
   -moz-osx-font-smoothing: grayscale;
 }
 button,
@@ -85,18 +115,6 @@ button,
   line-height: 3rem;
   font-weight: 500;
 }
-.contact-me {
-  margin: auto;
-  text-align: center;
-}
-.contact-me span {
-  position: absolute;
-  right: 1rem;
-}
-.contact-me a {
-  text-decoration: none;
-  color: gray;
-}
 .top-info {
   text-align: center;
   padding-bottom: 0.5rem;
@@ -106,13 +124,13 @@ button,
 }
 .ad_img_upload {
   margin: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
+  width: 7.1429rem;
+  height: 7.1429rem;
+  border-radius: 0.7143rem;
 }
 .img_upload_explain {
   display: inline;
-  font-size: 14px;
+  font-size: 1rem;
   color: #757575;
 }
 .state_container {
@@ -124,7 +142,7 @@ button,
   text-align: center;
 }
 .state_container .state_item .name {
-  font-size: 13px;
+  font-size: 0.9286rem;
 }
 .state_container .state_item span {
   color: #d6b785;
@@ -134,48 +152,48 @@ button,
   position: absolute;
   content: '';
   right: 0;
-  top: 1rem;
-  height: 3.1429rem;
-  width: 0.07rem;
+  top: 14px;
+  height: 44.0006px;
+  width: 0.98px;
   background-color: #f3f5f7;
 }
 .state_container .state_item:last-of-type::after {
   display: none;
 }
 .state_container .iconfont {
-  font-size: 30px;
+  font-size: 2.1429rem;
   color: #d6b785;
 }
 .user_state {
   text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  border-top: 1px solid #f3f5f7;
-  border-bottom: 1px solid #f3f5f7;
+  margin-top: 14px;
+  padding: 7px;
+  border-top: 0.0714rem solid #f3f5f7;
+  border-bottom: 0.0714rem solid #f3f5f7;
 }
 .user_state .iconfont {
   font-size: inherit;
   color: #ff7260;
 }
 .company_card_container {
-  padding: 1rem 0;
-  border-bottom: 1px solid #f3f5f7;
-  border-top: 1px solid #f3f5f7;
+  padding: 14px 0 7px 0;
+  border-bottom: 0.0714rem solid #f3f5f7;
+  border-top: 0.0714rem solid #f3f5f7;
 }
 .company_card_container:first-of-type {
   border-top: none;
 }
 .company_card_container:last-of-type {
-  margin-bottom: 10rem;
+  margin-bottom: 140px;
 }
 .company_card {
   display: flex;
   cursor: pointer;
 }
 .company_card img {
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
+  height: 5.7143rem;
+  width: 5.7143rem;
+  border-radius: 0.7143rem;
 }
 .company_card .left {
   text-align: center;
@@ -187,11 +205,11 @@ button,
 .company_card .right .title {
   font-size: 1.2857rem;
   font-weight: 500;
-  height: 30px;
+  height: 2.1429rem;
   overflow: hidden;
 }
 .company_card .right .describe {
-  height: 65px;
+  height: 4rem;
   font-size: 0.9286rem;
   color: #666;
   overflow: hidden;
@@ -200,6 +218,7 @@ button,
 .company_card_bottom {
   display: flex;
   text-align: center;
+  margin-top: 0.2143rem;
 }
 .company_card_bottom .item {
   flex: 1;
@@ -207,9 +226,13 @@ button,
 }
 .company_card_bottom .name {
   color: #666;
+  font-size: 0.8571rem;
 }
 .company_card_bottom span {
   font-weight: bold;
+}
+.company_card_bottom-button {
+  margin-top: 0.3571rem;
 }
 .file {
   position: relative;
@@ -217,20 +240,20 @@ button,
   max-width: 4rem;
   text-align: center;
   background: #d0eeff;
-  border: 1px solid #99d3f5;
-  border-radius: 4px;
-  padding: 4px 12px;
+  border: 0.0714rem solid #99d3f5;
+  border-radius: 0.2857rem;
+  padding: 0.2857rem 0.8571rem;
   overflow: hidden;
   color: #1e88c7;
   text-decoration: none;
   text-indent: 0;
-  line-height: 20px;
+  line-height: 1.4286rem;
   cursor: pointer;
   margin: 0.5rem auto;
 }
 .file input {
   position: absolute;
-  font-size: 100px;
+  font-size: 7.1429rem;
   right: 0;
   top: 0;
   opacity: 0;
@@ -254,9 +277,18 @@ button,
 .help img {
   max-width: 100%;
 }
-@media (min-width: 400px) {
+.readme_outer a {
+  text-decoration: none;
+  color: gray;
 }
-@media (min-width: 794px) {
+.readme_outer img {
+  margin: auto;
+  display: inherit;
+}
+.lan-bar {
+  margin: 0.7143rem 0;
+}
+@media (min-width: 794.0002px) {
   .mint-msgbox {
     width: inherit;
   }
@@ -264,28 +296,43 @@ button,
     margin-bottom: 3rem;
   }
   .mobile-wrap {
-    max-width: 500px;
-    min-height: 700px;
-    max-height: 90vh;
-    margin: 5vh auto 0 auto;
+    max-width: 700px;
+    min-height: 50rem;
+    height: 100vh;
+    margin: 0 auto 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 90vh;
     overflow: auto;
     background: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     padding-bottom: 3rem;
-    border-radius: 1rem;
     box-sizing: border-box;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.8571rem 1.0714rem 0 rgba(0, 0, 0, 0.24), 0 1.2143rem 3.5714rem 0 rgba(0, 0, 0, 0.19);
+  }
+  .ad_img_upload {
+    width: 100px;
+    height: 100px;
   }
   .button-submit {
     margin-bottom: 2rem;
   }
   .contact-me {
-    display: inherit;
-    margin-top: 1rem;
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    width: 200px;
+    text-align: center;
+  }
+  .contact-me span {
+    position: absolute;
+    right: 1rem;
+  }
+  .contact-me a {
+    text-decoration: none;
+    color: gray;
   }
   .company_container::-webkit-scrollbar,
   .inputfild::-webkit-scrollbar {
