@@ -53,11 +53,9 @@ body {
   src: url('https://cdn.jsdelivr.net/gh/yuxizhe/cdn@2/lib/iconfont.woff') format('woff');
 }
 .outer {
-  height: 100vh;
   overflow: hidden;
 }
 .company_container {
-  overflow: auto;
   height: 90%;
 }
 a {
@@ -81,8 +79,8 @@ button,
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh;
   overflow: hidden;
   background: white;
   padding: 1rem;
@@ -206,6 +204,9 @@ button,
   font-size: 1.2857rem;
   font-weight: 500;
   height: 2.1429rem;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 .company_card .right .describe {
@@ -269,7 +270,6 @@ button,
 .help {
   margin: 1rem;
   overflow: auto;
-  height: 90vh;
 }
 .help p {
   margin-bottom: 1rem;
@@ -288,6 +288,32 @@ button,
 .lan-bar {
   margin: 0.7143rem 0;
 }
+.fix_tab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.getGas {
+  display: block;
+  position: fixed;
+  text-decoration: none;
+  right: 0.7143rem;
+  color: black;
+  bottom: 5.7143rem;
+  background-image: url(http://p8upvupz2.bkt.clouddn.com/gas_72px_1180533_easyicon.net.png);
+  width: 5rem;
+  height: 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.getGas p {
+  display: block;
+  font-size: 1rem;
+  margin: auto;
+}
 @media (min-width: 794.0002px) {
   .mint-msgbox {
     width: inherit;
@@ -295,15 +321,18 @@ button,
   .button-submit {
     margin-bottom: 3rem;
   }
+  .fix_tab {
+    right: inherit;
+    left: 50%;
+    width: 700px;
+    transform: translateX(-50%);
+  }
   .mobile-wrap {
     max-width: 700px;
-    min-height: 50rem;
-    height: 100vh;
     margin: 0 auto 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
     overflow: auto;
     background: white;
     padding: 1rem 2rem;
@@ -337,6 +366,10 @@ button,
   .company_container::-webkit-scrollbar,
   .inputfild::-webkit-scrollbar {
     display: none;
+  }
+  .getGas {
+    left: 50%;
+    transform: translateX(250px);
   }
 }
 

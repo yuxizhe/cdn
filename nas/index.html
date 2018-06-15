@@ -38,7 +38,7 @@
     neb.setRequest(new HttpRequest("https://mainnet.nebulas.io"));
     var dappAddress = "n1vCs14GA1WjEANhZffpoddCvfxoMDZVfj4";
   </script>
-<link href="app.7aa6933d314a5f870fbf.css" rel="stylesheet"></head>
+<link href="app.cb9182801b164262f4d2.css" rel="stylesheet"></head>
 
 <body>
   <div id="app">
@@ -47,28 +47,28 @@
       <keep-alive>
         <router-view></router-view>
       </keep-alive>
-
-      <mt-tabbar v-model="selected">
-        <mt-tab-item id='/'>
-          <i slot="icon" class="iconfont">&#xe70b;</i>
-          {{$t("html.tab1")}}
-        </mt-tab-item>
-        <mt-tab-item id='/setAd'>
-          <i slot="icon" class="iconfont">&#xe634;</i>
-          {{$t("html.tab2")}}
-        </mt-tab-item>
-        <mt-tab-item id='/store'>
-          <i slot="icon" class="iconfont">&#xe640;</i>
-          {{$t("html.tab3")}}
-        </mt-tab-item>
-        <mt-tab-item id='/my'>
-          <i slot="icon" class="iconfont">&#xe606;</i>
-          {{$t("html.tab4")}}
-        </mt-tab-item>
-      </mt-tabbar>
+      <div class="fix_tab">
+        <mt-tabbar v-model="selected">
+          <mt-tab-item id='/'>
+            <i slot="icon" class="iconfont">&#xe70b;</i>
+            {{$t("html.tab1")}}
+          </mt-tab-item>
+          <mt-tab-item id='/setAd'>
+            <i slot="icon" class="iconfont">&#xe634;</i>
+            {{$t("html.tab2")}}
+          </mt-tab-item>
+          <mt-tab-item id='/store'>
+            <i slot="icon" class="iconfont">&#xe640;</i>
+            {{$t("html.tab3")}}
+          </mt-tab-item>
+          <mt-tab-item id='/my'>
+            <i slot="icon" class="iconfont">&#xe606;</i>
+            {{$t("html.tab4")}}
+          </mt-tab-item>
+        </mt-tabbar>
+      </div> 
     </div>
     <div class="contact-me">
-      <!-- <a href="https://naspay.tech/faucet.html" target="_blank"> 申请初始gas </a> -->
       <span>Hosted by
         <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
       </span>
@@ -83,6 +83,6 @@
 
     gtag('config', 'UA-119584347-2');
   </script>
-<script type="text/javascript" src="app.7aa6933d314a5f870fbf.js"></script></body>
+<script type="text/javascript" src="app.cb9182801b164262f4d2.js"></script></body>
 
 </html>
