@@ -175,7 +175,6 @@ button,
 }
 .company_card_container {
   padding: 14px 0 7px 0;
-  border-bottom: 0.0714rem solid #f3f5f7;
   border-top: 0.0714rem solid #f3f5f7;
 }
 .company_card_container:first-of-type {
@@ -300,10 +299,10 @@ button,
   text-decoration: none;
   right: 0.7143rem;
   color: black;
-  bottom: 5.7143rem;
+  bottom: 4.7143rem;
   background-image: url(http://p8upvupz2.bkt.clouddn.com/gas_72px_1180533_easyicon.net.png);
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -311,7 +310,8 @@ button,
 }
 .getGas p {
   display: block;
-  font-size: 1rem;
+  color: #666;
+  font-size: 0.8rem;
   margin: auto;
 }
 @media (min-width: 794.0002px) {
@@ -367,9 +367,12 @@ button,
   .inputfild::-webkit-scrollbar {
     display: none;
   }
+  .company_card .right {
+    margin-left: 2rem;
+  }
   .getGas {
     left: 50%;
-    transform: translateX(250px);
+    transform: translateX(275px);
   }
 }
 
