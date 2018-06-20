@@ -112,6 +112,7 @@ button,
   font-size: 1.5rem;
   line-height: 3rem;
   font-weight: 500;
+  color: #333333;
 }
 .top-info {
   text-align: center;
@@ -207,11 +208,12 @@ button,
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #333333;
 }
 .company_card .right .describe {
   height: 4rem;
   font-size: 0.9286rem;
-  color: #666;
+  color: #555555;
   overflow: hidden;
   word-break: break-all;
 }
@@ -230,9 +232,11 @@ button,
 }
 .company_card_bottom span {
   font-weight: bold;
+  line-height: 1.5rem;
+  color: #666666;
 }
 .company_card_bottom-button {
-  margin-top: 0.3571rem;
+  margin-top: 0.1571rem;
 }
 .file {
   position: relative;
@@ -310,7 +314,7 @@ button,
 }
 .getGas p {
   display: block;
-  color: #666;
+  color: #333333;
   font-size: 0.8rem;
   margin: auto;
 }
