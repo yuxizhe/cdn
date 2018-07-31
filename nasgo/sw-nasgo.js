@@ -1,4 +1,4 @@
-importScripts('/sw-toolbox.js')
+importScripts('sw-toolbox.js')
 
 self.addEventListener('install', event => {
   //取消更新后的等待
