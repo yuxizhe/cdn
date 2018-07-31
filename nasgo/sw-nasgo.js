@@ -18,7 +18,7 @@ toolbox.router.get(/http.*(.js|.css)/, toolbox.cacheFirst, {
 })
 
 // 首页缓存
-toolbox.router.get('/', toolbox.networkFirst, {
+toolbox.router.get('/cdn/nasgo/', toolbox.networkFirst, {
   cache: {
       name: "html"
   }

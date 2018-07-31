@@ -37,7 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgba(69, 165, 255, 0.65098039);
-  background-image: url('http://qn.nasgo.top/cases-bg.png');
+  background-image: url('https://tx-1256842980.cos.ap-beijing.myqcloud.com/cases-bg.png');
   color: #333;
   height: 100%;
   -webkit-text-size-adjust: 100% !important;
@@ -315,7 +315,7 @@ button,
   right: 0.7143rem;
   color: black;
   bottom: 4.7143rem;
-  background-image: url(http://qn.nasgo.top/gas_72px_1180533_easyicon.net.png);
+  background-image: url('https://tx-1256842980.cos.ap-beijing.myqcloud.com/gas_72px_1180533_easyicon.net%20(2).png');
   width: 3.5rem;
   height: 3.5rem;
   background-size: contain;
